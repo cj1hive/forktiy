@@ -1,0 +1,16 @@
+{
+  "name": "forktiy",
+  "version": "1.0.0",
+  "description": "recipe application",
+  "license": "ISC",
+  "author": "CJ Hive",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "parcel": "^2.16.4"
+  }
+}
