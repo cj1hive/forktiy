@@ -1,3 +1,7 @@
+import * as modle from './modle.js';
+import 'core-js';
+import 'regenerator-runtime/runtime';
+import recipeView from './Views/RecipesViews.js';
 const recipeContainer = document.querySelector('.recipe');
 
 const timeout = function (s) {
@@ -13,28 +17,24 @@ const timeout = function (s) {
 
 ///////////////////////////////////////
 console.log('test');
-const showRecipe = async function () {
-  try {
-    const res = await fetch(
-      'https://forkify-api.jonas.io/api/v2/recipes/5ed6604591c37cdc054bc886',
-    );
-    const data = await res.json();
-    let { recipe } = data.data;
-    recipe = {
-      id: recipe.id,
-      title: recipe.title,
-      publisher: recipe.publisher,
-      sourceUrl: recipe.source_url,
-      Image: recipe.Image,
-      serving: recipe.serving,
-      cookingTime: recipe.cooking_time,
-      ingredients: recipe.ingredients,
-    };
-    console.log(recipe);
 
-    if (!res.ok) throw new Error(`$${data.message} ${res.status}`);
+const controlRecipe = async function () {
+  try {
+    const id = window.location.hash.slice(1);
+    console.log(id);
+    if (!id) return;
+    // rendering Spinnger
+    recipeView.renderSpinner();
+    // importing the load Recipe
+    await modle.loadRecipe(id);
+    //rendering recipe
+    recipeView.render(modle.state.recipe);
   } catch (err) {
     alert(err);
   }
 };
-showRecipe();
+// window.addEventListener('hashchange', controlRecipe);
+// window.addEventListener('laod', controlRecipe);
+['hashchange', 'laod'].forEach(ev =>
+  window.addEventListener(ev, controlRecipe),
+);
