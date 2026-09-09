@@ -31,7 +31,7 @@
 32D:\downloads\forktiy\.prettierrc133783042770000000 0
 65D:\downloads\forktiy\node_modules\core-js\stable\iterator\drop.js134330203581719981 0
 64D:\downloads\forktiy\node_modules\core-js\features\array\push.js134330203622339021 0
-43D:\downloads\forktiy\dist\logo.726d37a8.png134334524311633059 0
+43D:\downloads\forktiy\dist\logo.726d37a8.png134334603877395436 0
 65D:\downloads\forktiy\node_modules\caniuse-lite\data\regions\DE.js134329358682621128 0
 57D:\downloads\forktiy\node_modules\react-refresh\README.md134329358671620013 0
 63D:\downloads\forktiy\node_modules\core-js\modules\es.promise.js134330203586266480 0
@@ -42,7 +42,7 @@
 64D:\downloads\forktiy\node_modules\core-js\es\object\is-sealed.js134330203613012955 0
 90D:\downloads\forktiy\node_modules\core-js\internals\typed-array-from-same-type-and-list.js134330203637638571 0
 69D:\downloads\forktiy\node_modules\core-js\stable\instance\flat-map.js134330203597036125 0
-25D:\downloads\forktiy\dist134334527674477370 1
+25D:\downloads\forktiy\dist134334604231007546 1
 52D:\downloads\forktiy\node_modules\term-size\index.js134329358671303403 0
 62D:\downloads\forktiy\node_modules\core-js\es\string\replace.js134330203624830506 0
 71D:\downloads\forktiy\node_modules\core-js\stable\array\virtual\slice.js134330203628061025 0
@@ -51,7 +51,7 @@
 66D:\downloads\forktiy\node_modules\@parcel\transformer-posthtml\lib134329358670348046 1
 56D:\downloads\forktiy\node_modules\escalade\dist\index.js134329358669493708 0
 53D:\downloads\forktiy\node_modules\core-js\actual\json134330203634846121 1
-49D:\downloads\forktiy\src\js\Views\RecipesViews.js134334528752310037 0
+49D:\downloads\forktiy\src\js\Views\RecipesViews.js134334546718078950 0
 62D:\downloads\forktiy\node_modules\core-js\actual\array\join.js134330203615237348 0
 60D:\downloads\forktiy\forkify-architecture-recipe-loading.png133783042770000000 0
 62D:\downloads\forktiy\node_modules\core-js\features\date\now.js134330203619480970 0
@@ -181,11 +181,11 @@
 57D:\downloads\forktiy\node_modules\nullthrows\package.json134329358669127246 0
 66D:\downloads\forktiy\node_modules\core-js\stable\array\is-array.js134330203611586418 0
 68D:\downloads\forktiy\node_modules\core-js\stable\string\trim-left.js134330203636613879 0
-37D:\downloads\forktiy\src\js\config.js134334505533473926 0
+37D:\downloads\forktiy\src\js\config.js134334599015117558 0
 70D:\downloads\forktiy\node_modules\@parcel\transformer-babel\lib\jsx.js134329358672449240 0
 77D:\downloads\forktiy\node_modules\core-js\internals\array-buffer-view-core.js134330203573235736 0
 63D:\downloads\forktiy\node_modules\@parcel\optimizer-svg\LICENSE134329358669177233 0
-41D:\downloads\forktiy\src\js\controller.js134334525265319329 0
+41D:\downloads\forktiy\src\js\controller.js134334545127637451 0
 53D:\downloads\forktiy\node_modules\core-js\stable\json134330203635167545 1
 61D:\downloads\forktiy\node_modules\caniuse-lite\data\agents.js134329358672469249 0
 45D:\downloads\forktiy\node_modules\detect-libc134329358670639901 1
@@ -206,7 +206,7 @@
 73D:\downloads\forktiy\node_modules\core-js\full\number\min-safe-integer.js134330203619280152 0
 62D:\downloads\forktiy\node_modules\core-js\actual\dom-exception134330203634830985 1
 56D:\downloads\forktiy\node_modules\core-js\postinstall.js134330203621615299 0
-36D:\downloads\forktiy\src\js\modle.js134334499560192107 0
+36D:\downloads\forktiy\src\js\modle.js134334607826449643 0
 60D:\downloads\forktiy\node_modules\nullthrows\nullthrows.d.ts134329358669795288 0
 33D:\downloads\forktiy\src\js\Views134331953755841664 1
 76D:\downloads\forktiy\node_modules\@parcel\packager-js\src\ESMOutputFormat.js134329358671805919 0
@@ -2193,7 +2193,7 @@
 69D:\downloads\forktiy\node_modules\core-js\stable\typed-array\every.js134330203592966331 0
 84D:\downloads\forktiy\node_modules\caniuse-lite\data\features\css-display-contents.js134329358679631597 0
 51D:\downloads\forktiy\node_modules\has-flag\index.js134329358669750138 0
-45D:\downloads\forktiy\dist\forktiy.4a59a05f.js134334527674432080 0
+45D:\downloads\forktiy\dist\forktiy.4a59a05f.js134334604230957451 0
 65D:\downloads\forktiy\node_modules\caniuse-lite\data\regions\PW.js134329358690279025 0
 81D:\downloads\forktiy\node_modules\lightningcss\node_modules\detect-libc\README.md134329358671258168 0
 59D:\downloads\forktiy\node_modules\@swc\helpers\_\_ts_values134329358682249337 1
@@ -5530,7 +5530,7 @@
 67D:\downloads\forktiy\node_modules\core-js\actual\aggregate-error.js134330203572502926 0
 54D:\downloads\forktiy\node_modules\core-js\actual\array134330203640686657 1
 63D:\downloads\forktiy\node_modules\core-js\actual\async-iterator134330203632113832 1
-50D:\downloads\forktiy\dist\forktiy.f7626f62.css.map134334524311201126 0
+50D:\downloads\forktiy\dist\forktiy.f7626f62.css.map134334603876823414 0
 56D:\downloads\forktiy\node_modules\core-js\actual\atob.js134330203575436784 0
 65D:\downloads\forktiy\node_modules\caniuse-lite\data\regions\MT.js134329358688520978 0
 56D:\downloads\forktiy\node_modules\core-js\actual\btoa.js134330203576411068 0
@@ -5856,7 +5856,7 @@
 82D:\downloads\forktiy\node_modules\@parcel\runtime-js\src\helpers\node\js-loader.js134329358673741290 0
 70D:\downloads\forktiy\node_modules\core-js\actual\instance\to-sorted.js134330203634188070 0
 71D:\downloads\forktiy\node_modules\core-js\actual\instance\to-spliced.js134330203634549855 0
-44D:\downloads\forktiy\dist\icons.21bad73c.svg134334524311336725 0
+44D:\downloads\forktiy\dist\icons.21bad73c.svg134334603877034158 0
 69D:\downloads\forktiy\node_modules\core-js\actual\instance\trim-end.js134330203636101521 0
 70D:\downloads\forktiy\node_modules\core-js\actual\instance\trim-left.js134330203636402912 0
 71D:\downloads\forktiy\node_modules\core-js\actual\instance\trim-right.js134330203636649028 0
@@ -5885,7 +5885,7 @@
 73D:\downloads\forktiy\node_modules\core-js\actual\dom-collections\index.js134330203607311276 0
 80D:\downloads\forktiy\node_modules\core-js\actual\disposable-stack\constructor.js134330203578666928 0
 74D:\downloads\forktiy\node_modules\core-js\actual\disposable-stack\index.js134330203607276056 0
-46D:\downloads\forktiy\dist\forktiy.f7626f62.css134334524311145784 0
+46D:\downloads\forktiy\dist\forktiy.f7626f62.css134334603876753116 0
 65D:\downloads\forktiy\node_modules\core-js\actual\date\get-year.js134330203604046630 0
 60D:\downloads\forktiy\node_modules\core-js\actual\date\now.js134330203619445883 0
 65D:\downloads\forktiy\node_modules\core-js\actual\date\set-year.js134330203627100988 0
@@ -6047,7 +6047,7 @@
 72D:\downloads\forktiy\node_modules\caniuse-lite\dist\unpacker\features.js134329358683943028 0
 70D:\downloads\forktiy\node_modules\caniuse-lite\dist\unpacker\region.js134329358690404623 0
 77D:\downloads\forktiy\node_modules\caniuse-lite\dist\unpacker\versionGroups.js134329358693071982 0
-36D:\downloads\forktiy\dist\index.html134334524311231204 0
+36D:\downloads\forktiy\dist\index.html134334603876888847 0
 68D:\downloads\forktiy\node_modules\caniuse-lite\dist\lib\supported.js134329358691519257 0
 70D:\downloads\forktiy\node_modules\caniuse-lite\data\browserVersions.js134329358676396435 0
 65D:\downloads\forktiy\node_modules\caniuse-lite\data\regions\AD.js134329358671459168 0
@@ -7567,14 +7567,14 @@
 47D:\downloads\forktiy\node_modules\.bin\sass.cmd134329363885889476 0
 49D:\downloads\forktiy\node_modules\.bin\semver.ps1134329358695832296 0
 65D:\downloads\forktiy\node_modules\.bin\update-browserslist-db.cmd134329358695842255 0
-46D:\downloads\forktiy\dist\favicon.8b2f57bf.png134334524311135750 0
+46D:\downloads\forktiy\dist\favicon.8b2f57bf.png134334603876732383 0
 45D:\downloads\forktiy\dist\forktiy.20341753.js134332090230893226 0
 45D:\downloads\forktiy\dist\forktiy.3464ddca.js134330165017849851 0
 49D:\downloads\forktiy\dist\forktiy.3464ddca.js.map134330165018061652 0
-49D:\downloads\forktiy\dist\forktiy.4a59a05f.js.map134334527674467416 0
+49D:\downloads\forktiy\dist\forktiy.4a59a05f.js.map134334604230997609 0
 46D:\downloads\forktiy\dist\forktiy.abfd9fe1.css134332090230888098 0
 50D:\downloads\forktiy\dist\forktiy.abfd9fe1.css.map134332090230988552 0
-44D:\downloads\forktiy\dist\icons.0809ef97.svg134334524311346676 0
+44D:\downloads\forktiy\dist\icons.0809ef97.svg134334603877044186 0
 44D:\downloads\forktiy\dist\icons.7bd9dd61.svg134330190911450204 0
 44D:\downloads\forktiy\dist\icons.c5b0f01c.svg134332090225573611 0
 43D:\downloads\forktiy\dist\logo.0240107d.png134332090228723674 0

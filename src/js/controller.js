@@ -2,6 +2,7 @@ import * as modle from './modle.js';
 import 'core-js';
 import 'regenerator-runtime/runtime';
 import recipeView from './Views/RecipesViews.js';
+import seachView from './Views/seachView.js';
 const recipeContainer = document.querySelector('.recipe');
 
 // NEW API URL (instead of the one shown in the video)
@@ -25,8 +26,19 @@ const controlRecipe = async function () {
     recipeView.renderErro();
   }
 };
-
+const controleSearchResults = async function () {
+  const query = seachView.getQuery();
+  if (!query) return;
+  try {
+    await modle.loadSerachResult(query);
+    console.log(modle.state.search.results);
+  } catch (err) {
+    console.log(err);
+  }
+};
+controleSearchResults();
 const init = function () {
   recipeView.addHandelRender(controlRecipe);
+  seachView.addHandlerSearch(controleSearchResults);
 };
 init();
