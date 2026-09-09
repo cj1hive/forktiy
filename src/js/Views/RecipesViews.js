@@ -30,11 +30,14 @@ const formatQuantity = quantity => {
   const remainder = Math.abs(numerator % denominator);
 
   if (!remainder) return String(whole);
-  return whole ? `${whole} ${remainder}/${denominator}` : `${numerator}/${denominator}`;
+  return whole
+    ? `${whole} ${remainder}/${denominator}`
+    : `${numerator}/${denominator}`;
 };
 class recipeView {
   #perantElement = document.querySelector('.recipe');
   #data;
+
   render(data) {
     this.#data = data;
     const markup = this.#generateMarkup();
@@ -116,6 +119,11 @@ class recipeView {
           </a>
         </div>`;
   }
+
+  addHandelRender(handler) {
+    ['hashchange', 'laod'].forEach(ev => window.addEventListener(ev, handler));
+  }
+
   #generateMarkupIng(ing) {
     return `<li class="recipe__ingredient">
               <svg class="recipe__icon">
@@ -131,14 +139,28 @@ class recipeView {
   #clear() {
     this.#perantElement.innerHTML = '';
   }
+
   renderSpinner = function () {
     const markup = `<div class="spinner">
           <svg>
             <use href="${icons}#icon-loader"></use>
           </svg>
         </div>`;
-    this.#perantElement.innerHTML = '';
+    this.#clear();
     this.#perantElement.insertAdjacentHTML('afterbegin', markup);
   };
+
+  renderErro(message) {
+    const markup = `<div class="error">
+            <div>
+              <svg>
+                <use href="${icons}#icon-alert-triangle"></use>
+              </svg>
+            </div>
+            <p>${message}</p>
+          </div>`;
+    this.#clear();
+    this.#perantElement.insertAdjacentHTML('afterbegin', markup);
+  }
 }
 export default new recipeView();
