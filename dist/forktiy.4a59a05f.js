@@ -812,7 +812,7 @@ const controlRecipe = async function() {
         //rendering recipe
         (0, _recipesViewsJsDefault.default).render(_modleJs.state.recipe);
     } catch (err) {
-        (0, _recipesViewsJsDefault.default).renderErro(`${err} nooooo`);
+        (0, _recipesViewsJsDefault.default).renderErro();
     }
 };
 const init = function() {
@@ -7133,6 +7133,8 @@ const formatQuantity = (quantity)=>{
 class recipeView {
     #perantElement = document.querySelector('.recipe');
     #data;
+    #ErrMessage = 'Recipe not found!';
+    #message = '';
     render(data) {
         this.#data = data;
         const markup = this.#generateMarkup();
@@ -7243,11 +7245,11 @@ class recipeView {
         this.#clear();
         this.#perantElement.insertAdjacentHTML('afterbegin', markup);
     };
-    renderErro(message) {
-        const markup = `<div class="error">
+    renderMessage(message = this.#message) {
+        const markup = `<div class="message">
             <div>
               <svg>
-                <use href="${(0, _iconsSvgDefault.default)}#icon-alert-triangle"></use>
+                <use href="${(0, _iconsSvgDefault.default)}#icon-smile"></use>
               </svg>
             </div>
             <p>${message}</p>

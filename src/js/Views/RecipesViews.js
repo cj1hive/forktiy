@@ -37,7 +37,8 @@ const formatQuantity = quantity => {
 class recipeView {
   #perantElement = document.querySelector('.recipe');
   #data;
-
+  #ErrMessage = 'Recipe not found!';
+  #message = '';
   render(data) {
     this.#data = data;
     const markup = this.#generateMarkup();
@@ -150,11 +151,11 @@ class recipeView {
     this.#perantElement.insertAdjacentHTML('afterbegin', markup);
   };
 
-  renderErro(message) {
-    const markup = `<div class="error">
+  renderMessage(message = this.#message) {
+    const markup = `<div class="message">
             <div>
               <svg>
-                <use href="${icons}#icon-alert-triangle"></use>
+                <use href="${icons}#icon-smile"></use>
               </svg>
             </div>
             <p>${message}</p>

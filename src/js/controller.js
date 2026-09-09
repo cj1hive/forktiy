@@ -22,7 +22,7 @@ const controlRecipe = async function () {
     //rendering recipe
     recipeView.render(modle.state.recipe);
   } catch (err) {
-    recipeView.renderErro(`${err} nooooo`);
+    recipeView.renderErro();
   }
 };
 
