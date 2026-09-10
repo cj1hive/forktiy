@@ -48,9 +48,9 @@ class recipeView {
 
   #generateMarkup() {
     return `<figure class="recipe__fig">
-          <img src=${this.#data.image} alt=${this.#data.title}recipe__img" />
+          <img src="${this.#data.image}" alt="${this.#data.title}" class="recipe__img" />
           <h1 class="recipe__title">
-            <span>${this.#data.title}/span>
+            <span>${this.#data.title}</span>
           </h1>
         </figure>
 
@@ -98,7 +98,7 @@ class recipeView {
         <div class="recipe__ingredients">
           <h2 class="heading--2">Recipe ingredients</h2>
           <ul class="recipe__ingredient-list">
-          ${this.#data.ingredients.map(this.#generateMarkupIng).join()}
+          ${this.#data.ingredients.map(this.#generateMarkupIng).join('')}
         </div>
 
         <div class="recipe__directions">
@@ -122,7 +122,7 @@ class recipeView {
   }
 
   addHandelRender(handler) {
-    ['hashchange', 'laod'].forEach(ev => window.addEventListener(ev, handler));
+    ['hashchange', 'load'].forEach(ev => window.addEventListener(ev, handler));
   }
 
   #generateMarkupIng(ing) {

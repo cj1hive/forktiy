@@ -3,8 +3,7 @@ import 'core-js';
 import 'regenerator-runtime/runtime';
 import recipeView from './Views/RecipesViews.js';
 import seachView from './Views/seachView.js';
-const recipeContainer = document.querySelector('.recipe');
-
+import searchResultsView from './Views/SearchResultsView.js';
 // NEW API URL (instead of the one shown in the video)
 // https://forkify-api.jonas.io
 
@@ -23,7 +22,7 @@ const controlRecipe = async function () {
     //rendering recipe
     recipeView.render(modle.state.recipe);
   } catch (err) {
-    recipeView.renderErro();
+    recipeView.renderMessage(err.message);
   }
 };
 const controleSearchResults = async function () {
@@ -31,12 +30,11 @@ const controleSearchResults = async function () {
   if (!query) return;
   try {
     await modle.loadSerachResult(query);
-    console.log(modle.state.search.results);
+    searchResultsView.render(modle.state.search.results);
   } catch (err) {
-    console.log(err);
+    recipeView.renderMessage(err.message);
   }
 };
-controleSearchResults();
 const init = function () {
   recipeView.addHandelRender(controlRecipe);
   seachView.addHandlerSearch(controleSearchResults);
