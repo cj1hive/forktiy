@@ -3,16 +3,15 @@ import icons from 'url:../../img/icons.svg';
 
 class resultView extends View {
   _perantElement = document.querySelector('.results');
-  _perantElement = document.querySelector('.recipe');
   _ErrMessage = 'no recipes found';
 
   _generateMarkup() {
-    console.log(this._data);
     return this._data.map(this._generateMarkUpPreview).join('');
   }
+
   _generateMarkUpPreview(result) {
     return `<li class="preview">
-            <a class="preview__link href="#${result.id}">
+            <a class="preview__link" href="#${result.id}">
               <figure class="preview__fig">
                 <img src="${result.image}" alt="${result.title}" />
               </figure>

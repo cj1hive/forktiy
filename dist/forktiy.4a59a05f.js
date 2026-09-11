@@ -7353,15 +7353,13 @@ var _iconsSvg = require("url:../../img/icons.svg");
 var _iconsSvgDefault = parcelHelpers.interopDefault(_iconsSvg);
 class resultView extends (0, _viewJsDefault.default) {
     _perantElement = document.querySelector('.results');
-    _perantElement = document.querySelector('.recipe');
     _ErrMessage = 'no recipes found';
     _generateMarkup() {
-        console.log(this._data);
         return this._data.map(this._generateMarkUpPreview).join('');
     }
     _generateMarkUpPreview(result) {
         return `<li class="preview">
-            <a class="preview__link href="#${result.id}">
+            <a class="preview__link" href="#${result.id}">
               <figure class="preview__fig">
                 <img src="${result.image}" alt="${result.title}" />
               </figure>
