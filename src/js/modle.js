@@ -39,7 +39,7 @@ export const loadSerachResult = async function (query) {
         id: res.id,
         title: res.title,
         publisher: res.publisher,
-        image: res.image,
+        image: res.image_url,
       };
     });
   } catch (err) {
