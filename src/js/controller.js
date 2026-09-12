@@ -33,7 +33,7 @@ const controleSearchResults = async function () {
     if (!query) return;
     await modle.loadSerachResult(query);
     console.log(modle.state.search.results);
-    resultView.render(modle.state.search.results);
+    resultView.render(modle.getSearchResultPage());
   } catch (err) {
     console.log(err);
   }

@@ -823,7 +823,7 @@ const controleSearchResults = async function() {
         if (!query) return;
         await _modleJs.loadSerachResult(query);
         console.log(_modleJs.state.search.results);
-        (0, _resultViewJsDefault.default).render(_modleJs.state.search.results);
+        (0, _resultViewJsDefault.default).render(_modleJs.getSearchResultPage());
     } catch (err) {
         console.log(err);
     }
@@ -6435,13 +6435,16 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "state", ()=>state);
 parcelHelpers.export(exports, "loadRecipe", ()=>loadRecipe);
 parcelHelpers.export(exports, "loadSerachResult", ()=>loadSerachResult);
+parcelHelpers.export(exports, "getSearchResultPage", ()=>getSearchResultPage);
 var _configJs = require("./config.js");
 var _helperJs = require("./helper.js");
 const state = {
     recipe: {},
     search: {
         query: '',
-        results: []
+        results: [],
+        page: 1,
+        resutlePerPage: (0, _configJs.RES_PER_PAGE)
     }
 };
 const loadRecipe = async function(id) {
@@ -6482,6 +6485,12 @@ const loadSerachResult = async function(query) {
         throw err;
     }
 };
+const getSearchResultPage = function(page = state.search.page) {
+    state.search.page = page;
+    const start = (page - 1) * state.search.resutlePerPage;
+    const end = page * state.search.resutlePerPage;
+    return state.search.results.slice(start, end);
+};
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT","./config.js":"2hPh4","./helper.js":"b1fwP"}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {
@@ -6518,8 +6527,10 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "API_URL", ()=>API_URL);
 parcelHelpers.export(exports, "timeout_sec", ()=>timeout_sec);
+parcelHelpers.export(exports, "RES_PER_PAGE", ()=>RES_PER_PAGE);
 const API_URL = 'https://forkify-api.jonas.io/api/v2/recipes/';
 const timeout_sec = 10;
+const RES_PER_PAGE = 10;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"b1fwP":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
